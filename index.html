@@ -9,60 +9,82 @@
         <section>
             <header>
                 <div class="logo">
-                    <img src="images/logo.png" alt="Hounter" />
+                    <img src="assets/svg_icons/logo.svg" alt="Hounter" />
                     <h1>Hounter</h1>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Article</a></li>
+                        <li><div class="dropdown">
+                            <button class="dropbtn">
+                                <span>Property</span>
+                                <i id="down-arrow-icon">
+                                    <img src="assets/svg_icons/darrow.svg" alt="down-arrow">
+                                </i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">House</a>
+                                <a href="#">Apartment</a>
+                                <a href="#">Villa</a>
+                            </div>
+                        </div></li>
+                        <li><a href="#">Sign Up!</a></li>
                     </ul>
                 </nav>
             </header>
             <div class="two-sided-container">
                 <div class="left-side">
-                    <h1>Find Your Dream Home</h1>
+                    <h1>find the place to live your dreams easily here</h1>
                     <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
                     <form action="#">
-                        <i id="location-icon"></i>
+                        <i id="location-icon">
+                            <img src="assets/svg_icons/location.svg" alt="location">
+                        </i>
                         <input type="text" placeholder="Enter your location" />
-                        <button type="submit">Searchi<i id="right-arrow-icon"></i></button>
+                        <button type="submit">
+                            <span>Search</span>
+                            <i id="right-arrow-icon">
+                                <img src="assets/svg_icons/rarrow.svg" alt="rarrow">
+                            </i>
+                        </button>
                     </form>
                     <p>Our partnership</p>
                     <div class="partnership">
-                        <img src="images/partner-1.png" alt="Partner 1" />
-                        <img src="images/partner-2.png" alt="Partner 2" />
-                        <img src="images/partner-3.png" alt="Partner 3" />
-                        <img src="images/partner-4.png" alt="Partner 4" />
+                        <img src="assets/images/partners/traveloka.png" alt="Partner 1" />
+                        <img src="assets/images/partners/tiket.png" alt="Partner 2" />
+                        <img src="assets/images/partners/airbnb.png" alt="Partner 3" />
+                        <img src="assets/images/partners/tripadvisor.png" alt="Partner 4" />
                     </div>
                 </div>
                 <div class="right-side">
                     <div class="stats-block">
                         <div class="users-images">
-                            <img src="#" alt="User Image">
+                            <img src="assets/images/avatars/11.jpeg" alt="User Image">
+                            <img src="assets/images/avatars/12.jpeg" alt="User Image">
+                            <img src="assets/images/avatars/1.jpeg" alt="User Image">
                         </div>
                         <div class="stats-info">
-                            <h3>1,200+</h3>
-                            <p>Happy Users</p>
+                            <h3>1K+ People</h3>
+                            <p>Successfully Getting Home</p>
                         </div>
                     </div>
                     <div class="stats-block">
                         <div class="users-images">
-                            <img src="#" alt="User Image">
+                            <img src="assets/images/articles/1.jpeg" alt="User Image">
                         </div>
                         <div class="stats-info">
-                            <h3>1,200+</h3>
-                            <p>Happy Users</p>
+                            <h3>56 Houses</h3>
+                            <p>Sold Monthly</p>
                         </div>
                     </div>
                     <div class="stats-block">
                         <div class="users-images">
-                            <img src="#" alt="User Image">
+                            <img src="assets/images/avatars/10.jpeg" alt="User Image">
                         </div>
                         <div class="stats-info">
-                            <h3>1,200+</h3>
-                            <p>Happy Users</p>
+                            <h3>4K+</h3>
+                            <p>People Looking for New Homes</p>
                         </div>
                     </div>
                 </div>
@@ -76,113 +98,124 @@
                 </div>
                 <nav>
                     <div class="nav-categories"></div>
-                        <button id="active">House</button>
-                        <button>Villa</button>
-                        <button>Apartment</button>
+                        <button id="active">
+                            <i id="down-arrow-icon">
+                                <img src="assets/svg_icons/house.svg" alt="house">
+                            </i>
+                            <span>House</span>
+                        </button>
+                        <button>
+                            <i id="down-arrow-icon">
+                                <img src="assets/svg_icons/villa.svg" alt="villa">
+                            </i>
+                            <span>Villa</span>
+                        </button>
+                        <button>
+                            <i id="down-arrow-icon">
+                                <img src="assets/svg_icons/apartment.svg" alt="apartment">
+                            </i>
+                            <span>Apartment</span>
+                        </button>
                     </div>
                     <div class="nav-slider-buttons">
-                        <button id="prev disabled"><i id="left-arrow-icon"></i></button>
-                        <button id="next"><i id="right-arrow-icon"></i></button>
+                        <button id="prev disabled">
+                            <i id="left-arrow-icon">
+                                <img src="assets/svg_icons/larrow.svg" alt="larrow">
+                            </i>
+                        </button>
+                        <button id="next">
+                            <i id="right-arrow-icon">
+                                <img src="assets/svg_icons/rarrow.svg" alt="rarrow">
+                            </i>
+                        </button>
                     </div>
                 </nav>
             </header>
             <div class="houses-slider">
                 <div class="house-slide">
                     <div class="house-image">
-                        <img src="images/house-1.jpg" alt="House 1" />
+                        <img src="assets/images/recommendations/1.jpeg" alt="House 1" />
                         <div class="house-tag">
-                            <i id="fire-icon"></i>
+                            <i id="fire-icon">
+                                <img src="assets/svg_icons/fire.svg" alt="fire">
+                            </i>
                             <p>Popular</p>
                         </div>
                     </div>
                     <div class="house-info">
                         <h3>Roselands House</h3>
-                        <h5>$1,200,000</h5>
+                        <h5>$35,000,000</h5>
                         <div class="user-common">
-                            <img src="images/user-1.jpg" alt="User 1" />
+                            <img src="assets/images/avatars/1.jpeg" alt="User 1" />
                             <div class="user-info">
-                                <h4>John Doe</h4>
-                                <p>Massachusetts, USA</p>
+                                <h4>Dianne Russell</h4>
+                                <p>Manchester, Kentucky</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="house-slide">
                     <div class="house-image">
-                        <img src="images/house-1.jpg" alt="House 1" />
+                        <img src="assets/images/recommendations/2.jpeg" alt="House 1" />
                         <div class="house-tag">
-                            <i id="fire-icon"></i>
-                            <p>Popular</p>
+                            <i id="house-icon">
+                                <img src="assets/svg_icons/house.svg" alt="house">
+                            </i>
+                            <p>New house</p>
                         </div>
                     </div>
                     <div class="house-info">
-                        <h3>Roselands House</h3>
-                        <h5>$1,200,000</h5>
+                        <h3>Woodlandside</h3>
+                        <h5>$22,000,000</h5>
                         <div class="user-common">
-                            <img src="images/user-1.jpg" alt="User 1" />
+                            <img src="assets/images/avatars/2.jpeg" alt="User 1" />
                             <div class="user-info">
-                                <h4>John Doe</h4>
-                                <p>Massachusetts, USA</p>
+                                <h4>Robert Fox</h4>
+                                <p>Dr. San Jose, South Dakota</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="house-slide">
                     <div class="house-image">
-                        <img src="images/house-1.jpg" alt="House 1" />
+                        <img src="assets/images/recommendations/3.jpeg" alt="House 1" />
                         <div class="house-tag">
-                            <i id="fire-icon"></i>
-                            <p>Popular</p>
+                            <i id="wallet-icon">
+                                <img src="assets/svg_icons/wallet.svg" alt="wallet">
+                            </i>
+                            <p>Best Deals</p>
                         </div>
                     </div>
                     <div class="house-info">
-                        <h3>Roselands House</h3>
-                        <h5>$1,200,000</h5>
+                        <h3>The Old Lighthouse</h3>
+                        <h5>$44,000,000</h5>
                         <div class="user-common">
-                            <img src="images/user-1.jpg" alt="User 1" />
+                            <img src="assets/images/avatars/3.jpeg" alt="User 1" />
                             <div class="user-info">
-                                <h4>John Doe</h4>
-                                <p>Massachusetts, USA</p>
+                                <h4>Ronald Richards</h4>
+                                <p>Santa Ana, Illinois</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="house-slide">
                     <div class="house-image">
-                        <img src="images/house-1.jpg" alt="House 1" />
+                        <img src="assets/images/recommendations/4.jpeg" alt="House 4" />
                         <div class="house-tag">
-                            <i id="fire-icon"></i>
+                            <i id="fire-icon">
+                                <img src="assets/svg_icons/fire.svg" alt="fire">
+                            </i>
                             <p>Popular</p>
                         </div>
                     </div>
                     <div class="house-info">
-                        <h3>Roselands House</h3>
-                        <h5>$1,200,000</h5>
+                        <h3>Cosmo's House</h3>
+                        <h5>$22,000,000</h5>
                         <div class="user-common">
-                            <img src="images/user-1.jpg" alt="User 1" />
+                            <img src="assets/images/avatars/4.jpeg" alt="User 4" />
                             <div class="user-info">
-                                <h4>John Doe</h4>
-                                <p>Massachusetts, USA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="house-slide">
-                    <div class="house-image">
-                        <img src="images/house-1.jpg" alt="House 1" />
-                        <div class="house-tag">
-                            <i id="fire-icon"></i>
-                            <p>Popular</p>
-                        </div>
-                    </div>
-                    <div class="house-info">
-                        <h3>Roselands House</h3>
-                        <h5>$1,200,000</h5>
-                        <div class="user-common">
-                            <img src="images/user-1.jpg" alt="User 1" />
-                            <div class="user-info">
-                                <h4>John Doe</h4>
-                                <p>Massachusetts, USA</p>
+                                <h4>Jenny Wilson</h4>
+                                <p>Preston Rd. Inglewood, Maine 98380</p>
                             </div>
                         </div>
                     </div>
@@ -201,43 +234,56 @@
                     <p>Houses recommended by our partners that have been curated to become the home of your dreams!</p>
                     <div class="house-details">
                         <div class="house-detail">
-                            <i id="bed-icon"></i>
-                            <p>3</p>
+                            <i id="bed-icon">
+                                <img src="assets/svg_icons/bed.svg" alt="bed">
+                            </i>
+                            <p>4 Bedroom</p>
                         </div>
                         <div class="house-detail">
-                            <i id="bath-icon"></i>
-                            <p>2</p>
+                            <i id="bath-icon">
+                                <img src="assets/svg_icons/bath.svg" alt="bath">
+                            </i>
+                            <p>2 Bathrooms</p>
                         </div>
                         <div class="house-detail">
-                            <i id="area-icon"></i>
-                            <p>1,200 sqft</p>
+                            <i id="carport-icon">
+                                <img src="assets/svg_icons/carport.svg" alt="carport">
+                            </i>
+                            <p>1 Carport</p>
                         </div>
                         <div class="house-detail">
-                            <i id="garage-icon"></i>
-                            <p>1</p>
+                            <i id="floor-icon">
+                                <img src="assets/svg_icons/floor.svg" alt="floor">
+                            </i>
+                            <p>2 Floors</p>
                         </div>
                     </div>
                     <div class="user-contact">
                         <div class="user-common">
-                            <img src="images/user-1.jpg" alt="User 1" />
+                            <img src="assets/images/avatars/1.jpeg" alt="User 1" />
                             <div class="user-info">
-                                <h4>John Doe</h4>
-                                <p>Massachusetts, USA</p>
+                                <h4>Dianne Russell</h4>
+                                <p>Manager Director</p>
                             </div>
                         </div>
-                        <button><i id="phone-icon"></i>Contact Now</button>
+                        <button>
+                            <i id="phone-icon">
+                                <img src="assets/svg_icons/phone.svg" alt="phone">
+                            </i>
+                            <span>Contact Now</span>
+                        </button>
                     </div>
                 </div>
                 <div class="right-side">
                     <div class="video-container">
                         <video controls>
-                            <source src="videos/house-tour.mp4" type="video/mp4" />
+                            <source src="assets/videos/house.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div class="images-container">
-                        <img src="images/house-1.jpg" alt="House 1" />
-                        <img src="images/house-2.jpg" alt="House 2" />
-                        <img src="images/house-3.jpg" alt="House 3" />
+                        <img src="assets/images/tour/1.jpeg" alt="House 1" />
+                        <img src="assets/images/tour/2.jpeg" alt="House 2" />
+                        <img src="assets/images/tour/3.jpeg" alt="House 3" />
                     </div>
                 </div>
             </div>
@@ -252,29 +298,31 @@
             <div class="slider review-autoslider">
                 <div class="review-slide">
                     <div class="review-image">
-                        <img src="images/review-1.jpg" alt="Review 1" />
+                        <img src="assets/images/reviews/1.jpeg" alt="Review 1" />
                     </div>
                     <div class="review-text">
                         <h3>Best! I got the house I wanted through Hounter</h3>
-                        <p>Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                        <p>I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</p>
                     </div>
                     <div class="review-author-rate">
                         <div class="user-common">
-                            <img src="images/user-1.jpg" alt="User 1" />
+                            <img src="assets/images/avatars/14.jpeg" alt="User 1" />
                             <div class="user-info">
-                                <h4>John Doe</h4>
-                                <p>Manager Director</p>
+                                <h4>Courtney Henry</h4>
+                                <p>CEO Andarafish</p>
                             </div>
                         </div>
                         <div class="review-rating">
-                            <i id="star-icon"></i>
+                            <i id="star-icon">
+                                <img src="assets/svg_icons/star.svg" alt="star">
+                            </i>
                             <p>4.3</p>
                         </div>
                     </div>
                 </div>
                 <div class="review-slide">
                     <div class="review-image">
-                        <img src="images/review-1.jpg" alt="Review 1" />
+                        <img src="assets/images/reviews/2.jpeg" alt="Review 1" />
                     </div>
                     <div class="review-text">
                         <h3>Best! I got the house I wanted through Hounter</h3>
@@ -282,36 +330,40 @@
                     </div>
                     <div class="review-author-rate">
                         <div class="user-common">
-                            <img src="images/user-1.jpg" alt="User 1" />
+                            <img src="assets/images/avatars/1.jpeg" alt="User 1" />
                             <div class="user-info">
-                                <h4>John Doe</h4>
+                                <h4>Dianne Russell</h4>
                                 <p>Manager Director</p>
                             </div>
                         </div>
                         <div class="review-rating">
-                            <i id="star-icon"></i>
-                            <p>4.3</p>
+                            <i id="star-icon">
+                                <img src="assets/svg_icons/star.svg" alt="star">
+                            </i>
+                            <p>4.6</p>
                         </div>
                     </div>
                 </div>
                 <div class="review-slide">
                     <div class="review-image">
-                        <img src="images/review-1.jpg" alt="Review 1" />
+                        <img src="assets/images/reviews/3.jpeg" alt="Review 1" />
                     </div>
                     <div class="review-text">
-                        <h3>Best! I got the house I wanted through Hounter</h3>
-                        <p>Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                        <h3>Through the Hounter, I can get a house for my self</h3>
+                        <p>By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</p>
                     </div>
                     <div class="review-author-rate">
                         <div class="user-common">
-                            <img src="images/user-1.jpg" alt="User 1" />
+                            <img src="assets/images/avatars/5.jpeg" alt="User 1" />
                             <div class="user-info">
-                                <h4>John Doe</h4>
-                                <p>Manager Director</p>
+                                <h4>Esther Howard</h4>
+                                <p>Head of Marketing</p>
                             </div>
                         </div>
                         <div class="review-rating">
-                            <i id="star-icon"></i>
+                            <i id="star-icon">
+                                <img src="assets/svg_icons/star.svg" alt="star">
+                            </i>
                             <p>4.3</p>
                         </div>
                     </div>
@@ -339,55 +391,58 @@
                 <div class="left-side">
                     <article class="article-mini">
                         <div class="article-image">
-                            <img src="images/article-1.jpg" alt="Article 1" />
+                            <img src="assets/images/articles/2.jpeg" alt="Article 1" />
                         </div>
                         <div class="article-info">
                             <div class="author">
-                                <img src="images/author-1.jpg" alt="Author 1" />
-                                <h4>John Doe</h4>
+                                <img src="assets/images/avatars/1.jpeg" alt="Author 1" />
+                                <h4>Dianne Russell</h4>
                             </div>
-                            <h3>How to sell your house in 5 easy steps</h3>
-                            <p>Learn how to sell your house in 5 easy steps. This article will help you to sell your house faster and easier</p>
+                            <h3>The things we need to check when we want to buy a house</h3>
                             <div class="time-info">
-                                <i id="time-icon"></i>
-                                <p>5 min read</p>
-                                <time>2 days ago</time>
+                                <i id="time-icon">
+                                    <img src="assets/svg_icons/time.svg" alt="time">
+                                </i>
+                                <p>4 min read</p>
+                                <time>25 Apr 2021</time>
                             </div>
                         </div>
                     </article>
                     <article class="article-mini">
                         <div class="article-image">
-                            <img src="images/article-1.jpg" alt="Article 1" />
+                            <img src="assets/images/articles/3.jpeg" alt="Article 1" />
                         </div>
                         <div class="article-info">
                             <div class="author">
-                                <img src="images/author-1.jpg" alt="Author 1" />
-                                <h4>John Doe</h4>
+                                <img src="assets/images/avatars/6.jpeg" alt="Author 1" />
+                                <h4>Courtney Henry</h4>
                             </div>
-                            <h3>How to sell your house in 5 easy steps</h3>
-                            <p>Learn how to sell your house in 5 easy steps. This article will help you to sell your house faster and easier</p>
+                            <h3>7 Ways to distinguish the quality of the house we want to buy</h3>
                             <div class="time-info">
-                                <i id="time-icon"></i>
-                                <p>5 min read</p>
-                                <time>2 days ago</time>
+                                <i id="time-icon">
+                                    <img src="assets/svg_icons/time.svg" alt="time">
+                                </i>
+                                <p>6 min read</p>
+                                <time>24 Apr 2021</time>
                             </div>
                         </div>
                     </article>
                     <article class="article-mini">
                         <div class="article-image">
-                            <img src="images/article-1.jpg" alt="Article 1" />
+                            <img src="assets/images/articles/4.jpeg" alt="Article 1" />
                         </div>
                         <div class="article-info">
                             <div class="author">
-                                <img src="images/author-1.jpg" alt="Author 1" />
-                                <h4>John Doe</h4>
+                                <img src="assets/images/avatars/7.jpeg" alt="Author 1" />
+                                <h4>Darlene Robertson</h4>
                             </div>
-                            <h3>How to sell your house in 5 easy steps</h3>
-                            <p>Learn how to sell your house in 5 easy steps. This article will help you to sell your house faster and easier</p>
+                            <h3>The best way to know the quality of the house we want to buy</h3>
                             <div class="time-info">
-                                <i id="time-icon"></i>
-                                <p>5 min read</p>
-                                <time>2 days ago</time>
+                                <i id="time-icon">
+                                    <img src="assets/svg_icons/time.svg" alt="time">
+                                </i>
+                                <p>24 Apr 2021</p>
+                                <time></time>
                             </div>
                         </div>
                     </article>
@@ -395,19 +450,21 @@
                 <div class="right-side">
                     <article class="article-normal">
                         <div class="article-image">
-                            <img src="images/article-1.jpg" alt="Article 1" />
+                            <img src="assets/images/articles/1.jpeg" alt="Article 1" />
                         </div>
                         <div class="article-info">
                             <div class="author">
-                                <img src="images/author-1.jpg" alt="Author 1" />
-                                <h4>John Doe</h4>
+                                <img src="assets/images/avatars/8.jpeg" alt="Author 1" />
+                                <h4>Cameron Williamson</h4>
                             </div>
-                            <h3>How to sell your house in 5 easy steps</h3>
-                            <p>Learn how to sell your house in 5 easy steps. This article will help you to sell your house faster and easier</p>
+                            <h3>12 Things to know before buying a house</h3>
+                            <p>Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
                             <div class="time-info">
-                                <i id="time-icon"></i>
-                                <p>5 min read</p>
-                                <time>2 days ago</time>
+                                <i id="time-icon">
+                                    <img src="assets/svg_icons/time.svg" alt="time">
+                                </i>
+                                <p>8 min read</p>
+                                <time>25 Apr 2021</time>
                             </div>
                         </div>
                     </article>
@@ -415,35 +472,60 @@
             </div>
         </section>
         <section>
-            <div class="subscribe-box">
-                <h2>Subscribe to our newsletter</h2>
+            <section class="subscribe-box">
+                <h2>Subscribe For More Info and update from Hounter</h2>
                 <form>
-                    <i id="email-icon"></i>
-                    <input type="email" placeholder="Enter your email" />
+                    <i id="email-icon">
+                        <img src="assets/svg_icons/mail.svg" alt="email">
+                    </i>
+                    <input type="email" placeholder="Your email here" />
                     <button type="submit">Subscribe</button>
                 </form>
-            </div>
+                <div class="random-images">
+                    <img src="assets/images/avatars/1.jpeg" alt="User 1" />
+                    <img src="assets/images/avatars/3.jpeg" alt="User 2" />
+                    <img src="assets/images/avatars/6.jpeg" alt="User 3" />
+                    <img src="assets/images/avatars/9.jpeg" alt="User 4" />
+                    
+                    <img src="assets/images/subscribe-bar/1.jpeg" alt="" />
+                    <img src="assets/images/subscribe-bar/2.jpeg" alt="" />
+                    <img src="assets/images/subscribe-bar/3.jpeg" alt="" />
+                    <img src="assets/images/subscribe-bar/4.jpeg" alt="" />
+                </div>
+            </section>
             <footer>
                 <div class="two-sided-container">
                     <div class="left-side">
                         <div class="footer-logo">
-                            <img src="images/logo.png" alt="Hounter" />
+                            <img src="assets/svg_icons/logo.svg" alt="Hounter" />
                             <h1>Hounter</h1>
                         </div>
                         <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
                         <div class="footer-social">
-                            <a href="#"><i id="facebook-icon"></i></a>
-                            <a href="#"><i id="twitter-icon"></i></a>
-                            <a href="#"><i id="instagram-icon"></i></a>
+                            <a href="#">
+                                <i id="facebook-icon">
+                                    <img src="assets/svg_icons/facebook.svg" alt="facebook">
+                                </i>
+                            </a>
+                            <a href="#">
+                                <i id="twitter-icon">
+                                   <img src="assets/svg_icons/twitter.svg" alt="twitter">
+                                </i>
+                            </a>
+                            <a href="#">
+                                <i id="instagram-icon">
+                                    <img src="assets/svg_icons/instagram.svg" alt="instagram">
+                                </i>
+                            </a>
                         </div>
                     </div>
                     <div class="right-side">
                         <div class="footer-list">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">House</a></li>
+                                <li><a href="#">Apartment</a></li>
+                                <li><a href="#">Villa</a></li>
                             </ul>
                         </div>
                         <div class="footer-list">
