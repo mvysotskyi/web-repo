@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: Lexend, Arial, sans-serif;
 }
 
 /* General styles */
 
 body {
-    font-family: Lexend, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
@@ -84,7 +85,7 @@ button.active2 {
 }
 
 button.active3 {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
     padding: 8px 16px;
     background: #FFFFFF1A;
@@ -111,7 +112,6 @@ button.unactive {
     border-radius: 32px;
     display: inline-flex;
     align-items: center;
-    /* justify-content: stretch; */
     gap: 16px;
     box-shadow: 0px 9px 32px 0px #595CDB0D;
     background-color: white;
@@ -123,11 +123,6 @@ button.unactive {
     line-height: 22px;
     border: none;
     flex: auto;
-}
-
-.slider {
-    width: calc(100% + 120px);
-    /* margin-right: -120px; */
 }
 
 /* Remove all default input styles */
@@ -350,6 +345,7 @@ header.centred .hs-container h5::before {
     box-shadow: 0px 11px 48px 0px #3333330F;
     background-color: white;
     border-radius: 32px;
+    white-space: nowrap;
 }
 
 .title-block .stats-info h3 {
@@ -426,6 +422,7 @@ header.centred .hs-container h5::before {
     overflow-y: hidden;
     white-space: nowrap;
     column-gap: 40px;
+    width: calc(100% + 120px);
 }
 
 .house-slide .house-image {
@@ -658,7 +655,8 @@ a {
     overflow-x: hidden;
     column-gap: 56px;
     padding: 40px 0 32px 0;
-    max-width: 100%;
+    width: calc(100% + 240px);
+    margin-left: -120px;
 }
 
 .review-slide .review-image {
@@ -720,7 +718,6 @@ a {
     border-radius: 50%;
     width: 8px;
     height: 8px;
-    /* margin-top: 32px; */
 }
 
 .slider-dots .dot#active {
