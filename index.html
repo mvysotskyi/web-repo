@@ -4,9 +4,21 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Hounter</title>
+
+        <!-- Include Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+        <!-- Include Lexend font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+        <!-- Include css -->
+        <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
-        <section>
+        <div class="wrapper">
+        <section class="block-section title-block">
             <header>
                 <div class="logo">
                     <img src="assets/svg_icons/logo.svg" alt="Hounter" />
@@ -14,42 +26,55 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Article</a></li>
-                        <li><div class="dropdown">
-                            <button class="dropbtn">
-                                <span>Property</span>
-                                <i id="down-arrow-icon">
-                                    <img src="assets/svg_icons/darrow.svg" alt="down-arrow">
-                                </i>
+                        <li>
+                            <button class="active3">
+                                <a href="#">About Us</a>
                             </button>
-                            <div class="dropdown-content">
-                                <a href="#">House</a>
-                                <a href="#">Apartment</a>
-                                <a href="#">Villa</a>
+                        <li>
+                            <button class="active3">
+                                <a href="#">Articles</a>
+                            </button>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn active3">
+                                    <span>Property</span>
+                                    <i id="down-arrow-icon">
+                                        <img src="assets/svg_icons/darrow.svg" alt="down-arrow">
+                                    </i>
+                                </button>
+                                <!-- <div class="dropdown-content">
+                                    <a href="#">House</a>
+                                    <a href="#">Apartment</a>
+                                    <a href="#">Villa</a>
+                                </div> -->
                             </div>
-                        </div></li>
-                        <li><a href="#">Sign Up!</a></li>
+                        </li>
+                        <li>
+                            <button class="active2">
+                                <a href="#">Sign Up!</a>
+                            </button>
+                        </li>
                     </ul>
                 </nav>
             </header>
             <div class="two-sided-container">
                 <div class="left-side">
-                    <h1>find the place to live your dreams easily here</h1>
-                    <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
-                    <form action="#">
+                    <h1>find the place to live <span class="outer">your dreams</span> easily here</h1>
+                    <p class="short-text">Everything you need about finding your place to live will be here, where it will be easier for you</p>
+                    <form class="one-input-form" action="#">
                         <i id="location-icon">
                             <img src="assets/svg_icons/location.svg" alt="location">
                         </i>
                         <input type="text" placeholder="Enter your location" />
-                        <button type="submit">
+                        <button class="button active" type="submit">
                             <span>Search</span>
                             <i id="right-arrow-icon">
                                 <img src="assets/svg_icons/rarrow.svg" alt="rarrow">
                             </i>
                         </button>
                     </form>
-                    <p>Our partnership</p>
+                    <p class="short-text">Our partnership</p>
                     <div class="partnership">
                         <img src="assets/images/partners/traveloka.png" alt="Partner 1" />
                         <img src="assets/images/partners/tiket.png" alt="Partner 2" />
@@ -59,86 +84,86 @@
                 </div>
                 <div class="right-side">
                     <div class="stats-block">
-                        <div class="users-images">
+                        <div class="stat-images pm">
                             <img src="assets/images/avatars/11.jpeg" alt="User Image">
                             <img src="assets/images/avatars/12.jpeg" alt="User Image">
                             <img src="assets/images/avatars/1.jpeg" alt="User Image">
                         </div>
                         <div class="stats-info">
                             <h3>1K+ People</h3>
-                            <p>Successfully Getting Home</p>
+                            <p class="short-text">Successfully Getting Home</p>
                         </div>
                     </div>
                     <div class="stats-block">
-                        <div class="users-images">
+                        <div class="stat-images ph">
                             <img src="assets/images/articles/1.jpeg" alt="User Image">
                         </div>
                         <div class="stats-info">
                             <h3>56 Houses</h3>
-                            <p>Sold Monthly</p>
+                            <p class="short-text">Sold Monthly</p>
                         </div>
                     </div>
                     <div class="stats-block">
-                        <div class="users-images">
+                        <div class="stat-images pu">
                             <img src="assets/images/avatars/10.jpeg" alt="User Image">
                         </div>
                         <div class="stats-info">
                             <h3>4K+</h3>
-                            <p>People Looking for New Homes</p>
+                            <p class="short-text">People Looking for New Homes</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <header>
+        <section class="block-section">
+            <header class="recs-header">
                 <div class="hs-container">
                     <h5>Our Recommendation</h5>
                     <h2>Featured House</h2>
                 </div>
-                <nav>
-                    <div class="nav-categories"></div>
-                        <button id="active">
-                            <i id="down-arrow-icon">
-                                <img src="assets/svg_icons/house.svg" alt="house">
-                            </i>
+                <!-- <nav class="recs-nav"> -->
+                    <nav class="nav-categories">
+                        <button class="active2">
+                            <span class="button-ico">
+                                <object data="assets/svg_icons/house.svg"></object>
+                            </span>
                             <span>House</span>
                         </button>
-                        <button>
-                            <i id="down-arrow-icon">
+                        <button class="unactive">
+                            <span class="button-ico">
                                 <img src="assets/svg_icons/villa.svg" alt="villa">
-                            </i>
+                            </span>
                             <span>Villa</span>
                         </button>
-                        <button>
-                            <i id="down-arrow-icon">
+                        <button class="unactive">
+                            <span class="button-ico">
                                 <img src="assets/svg_icons/apartment.svg" alt="apartment">
-                            </i>
+                            </span>
                             <span>Apartment</span>
                         </button>
-                    </div>
-                    <div class="nav-slider-buttons">
-                        <button id="prev disabled">
-                            <i id="left-arrow-icon">
+                    </nav>
+                    <nav class="nav-slider-buttons">
+                        <button id="prev" class="active disabled">
+                            <span class="button-ico">
                                 <img src="assets/svg_icons/larrow.svg" alt="larrow">
-                            </i>
+                            </span>
                         </button>
-                        <button id="next">
-                            <i id="right-arrow-icon">
+                        <button id="next" class="active">
+                            <span class="button-ico">
                                 <img src="assets/svg_icons/rarrow.svg" alt="rarrow">
-                            </i>
+                            </span>
                         </button>
-                    </div>
-                </nav>
+                    </nav>
+                <!-- </nav> -->
             </header>
-            <div class="houses-slider">
+            <div class="houses-slider slider">
                 <div class="house-slide">
                     <div class="house-image">
                         <img src="assets/images/recommendations/1.jpeg" alt="House 1" />
-                        <div class="house-tag">
-                            <i id="fire-icon">
+                        <div class="house-tag" id="popular">
+                            <span class="tag-icon">
                                 <img src="assets/svg_icons/fire.svg" alt="fire">
-                            </i>
+                            </span>
                             <p>Popular</p>
                         </div>
                     </div>
@@ -157,10 +182,10 @@
                 <div class="house-slide">
                     <div class="house-image">
                         <img src="assets/images/recommendations/2.jpeg" alt="House 1" />
-                        <div class="house-tag">
-                            <i id="house-icon">
-                                <img src="assets/svg_icons/house.svg" alt="house">
-                            </i>
+                        <div class="house-tag" id="new">
+                            <span class="tag-icon">
+                                <img src="assets/svg_icons/house_blue.svg" alt="house" />
+                            </span>
                             <p>New house</p>
                         </div>
                     </div>
@@ -179,10 +204,10 @@
                 <div class="house-slide">
                     <div class="house-image">
                         <img src="assets/images/recommendations/3.jpeg" alt="House 1" />
-                        <div class="house-tag">
-                            <i id="wallet-icon">
+                        <div class="house-tag" id="bd">
+                            <span class="tag-icon">
                                 <img src="assets/svg_icons/wallet.svg" alt="wallet">
-                            </i>
+                            </span>
                             <p>Best Deals</p>
                         </div>
                     </div>
@@ -201,10 +226,10 @@
                 <div class="house-slide">
                     <div class="house-image">
                         <img src="assets/images/recommendations/4.jpeg" alt="House 4" />
-                        <div class="house-tag">
-                            <i id="fire-icon">
+                        <div class="house-tag" id="popular">
+                            <span class="tag-icon">
                                 <img src="assets/svg_icons/fire.svg" alt="fire">
-                            </i>
+                            </span>
                             <p>Popular</p>
                         </div>
                     </div>
@@ -222,16 +247,17 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="two-sided-container">
+        <section class="block-section">
+            <div class="details two-sided-container">
                 <div class="left-side">
                     <header>
                         <div class="hs-container">
                             <h5>Ready to Sell!</h5>
                             <h2>Let’s tour and see our house!</h2>
                         </div>
+                        <p class="short-text">Houses recommended by our partners that have been curated to become the home of your dreams!</p>
                     </header>
-                    <p>Houses recommended by our partners that have been curated to become the home of your dreams!</p>
+                    <h3>House Detail</h3>
                     <div class="house-details">
                         <div class="house-detail">
                             <i id="bed-icon">
@@ -266,17 +292,17 @@
                                 <p>Manager Director</p>
                             </div>
                         </div>
-                        <button>
-                            <i id="phone-icon">
+                        <button class="button active">
+                            <!-- <i id="phone-icon"> -->
                                 <img src="assets/svg_icons/phone.svg" alt="phone">
-                            </i>
+                            <!-- </i> -->
                             <span>Contact Now</span>
                         </button>
                     </div>
                 </div>
                 <div class="right-side">
                     <div class="video-container">
-                        <video controls>
+                        <video muted>
                             <source src="assets/videos/house.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -288,8 +314,8 @@
                 </div>
             </div>
         </section>
-        <section>
-            <header>
+        <section class="block-section">
+            <header class="centred">
                 <div class="hs-container">
                     <h5>See Our Review</h5>
                     <h2>What Our User Say About Us</h2>
@@ -300,23 +326,25 @@
                     <div class="review-image">
                         <img src="assets/images/reviews/1.jpeg" alt="Review 1" />
                     </div>
-                    <div class="review-text">
-                        <h3>Best! I got the house I wanted through Hounter</h3>
-                        <p>I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</p>
-                    </div>
-                    <div class="review-author-rate">
-                        <div class="user-common">
-                            <img src="assets/images/avatars/14.jpeg" alt="User 1" />
-                            <div class="user-info">
-                                <h4>Courtney Henry</h4>
-                                <p>CEO Andarafish</p>
-                            </div>
+                    <div class="review-content">
+                        <div class="review-text">
+                            <h3>Best! I got the house I wanted through Hounter</h3>
+                            <p class="short-text">I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</p>
                         </div>
-                        <div class="review-rating">
-                            <i id="star-icon">
-                                <img src="assets/svg_icons/star.svg" alt="star">
-                            </i>
-                            <p>4.3</p>
+                        <div class="review-author-rate">
+                            <div class="user-common">
+                                <img src="assets/images/avatars/14.jpeg" alt="User 1" />
+                                <div class="user-info">
+                                    <h4>Courtney Henry</h4>
+                                    <p>CEO Andarafish</p>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i id="star-icon">
+                                    <img src="assets/svg_icons/star.svg" alt="star">
+                                </i>
+                                <p>4.3</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -324,23 +352,25 @@
                     <div class="review-image">
                         <img src="assets/images/reviews/2.jpeg" alt="Review 1" />
                     </div>
-                    <div class="review-text">
-                        <h3>Best! I got the house I wanted through Hounter</h3>
-                        <p>Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
-                    </div>
-                    <div class="review-author-rate">
-                        <div class="user-common">
-                            <img src="assets/images/avatars/1.jpeg" alt="User 1" />
-                            <div class="user-info">
-                                <h4>Dianne Russell</h4>
-                                <p>Manager Director</p>
-                            </div>
+                    <div class="review-content">
+                        <div class="review-text">
+                            <h3>Best! I got the house I wanted through Hounter</h3>
+                            <p class="short-text">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
                         </div>
-                        <div class="review-rating">
-                            <i id="star-icon">
-                                <img src="assets/svg_icons/star.svg" alt="star">
-                            </i>
-                            <p>4.6</p>
+                        <div class="review-author-rate">
+                            <div class="user-common">
+                                <img src="assets/images/avatars/1.jpeg" alt="User 1" />
+                                <div class="user-info">
+                                    <h4>Dianne Russell</h4>
+                                    <p>Manager Director</p>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i id="star-icon">
+                                    <img src="assets/svg_icons/star.svg" alt="star">
+                                </i>
+                                <p>4.6</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -348,23 +378,25 @@
                     <div class="review-image">
                         <img src="assets/images/reviews/3.jpeg" alt="Review 1" />
                     </div>
-                    <div class="review-text">
-                        <h3>Through the Hounter, I can get a house for my self</h3>
-                        <p>By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</p>
-                    </div>
-                    <div class="review-author-rate">
-                        <div class="user-common">
-                            <img src="assets/images/avatars/5.jpeg" alt="User 1" />
-                            <div class="user-info">
-                                <h4>Esther Howard</h4>
-                                <p>Head of Marketing</p>
-                            </div>
+                    <div class="review-content">
+                        <div class="review-text">
+                            <h3>Through the Hounter, I can get a house for my self</h3>
+                            <p class="short-text">By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</p>
                         </div>
-                        <div class="review-rating">
-                            <i id="star-icon">
-                                <img src="assets/svg_icons/star.svg" alt="star">
-                            </i>
-                            <p>4.3</p>
+                        <div class="review-author-rate">
+                            <div class="user-common">
+                                <img src="assets/images/avatars/5.jpeg" alt="User 1" />
+                                <div class="user-info">
+                                    <h4>Esther Howard</h4>
+                                    <p>Head of Marketing</p>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i id="star-icon">
+                                    <img src="assets/svg_icons/star.svg" alt="star">
+                                </i>
+                                <p>4.3</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -375,14 +407,14 @@
                 <div class="dot"></div>
             </div>
         </section>
-        <section>
-            <header>
+        <section class="articles block-section">
+            <header class="centred">
                 <div class="hs-container">
                     <h5>See tips and trick from our partnership</h5>
                     <h2>Find out more about selling and buying homes</h2>
                 </div>
                 <nav>
-                    <button>
+                    <button class="active">
                         <a href="#">More Article</a>
                     </button>
                 </nav>
@@ -458,7 +490,7 @@
                                 <h4>Cameron Williamson</h4>
                             </div>
                             <h3>12 Things to know before buying a house</h3>
-                            <p>Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
+                            <p class="short-text">Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
                             <div class="time-info">
                                 <i id="time-icon">
                                     <img src="assets/svg_icons/time.svg" alt="time">
@@ -471,36 +503,37 @@
                 </div>
             </div>
         </section>
-        <section>
-            <section class="subscribe-box">
-                <h2>Subscribe For More Info and update from Hounter</h2>
-                <form>
-                    <i id="email-icon">
-                        <img src="assets/svg_icons/mail.svg" alt="email">
-                    </i>
-                    <input type="email" placeholder="Your email here" />
-                    <button type="submit">Subscribe</button>
-                </form>
-                <div class="random-images">
-                    <img src="assets/images/avatars/1.jpeg" alt="User 1" />
-                    <img src="assets/images/avatars/3.jpeg" alt="User 2" />
-                    <img src="assets/images/avatars/6.jpeg" alt="User 3" />
-                    <img src="assets/images/avatars/9.jpeg" alt="User 4" />
-                    
-                    <img src="assets/images/subscribe-bar/1.jpeg" alt="" />
-                    <img src="assets/images/subscribe-bar/2.jpeg" alt="" />
-                    <img src="assets/images/subscribe-bar/3.jpeg" alt="" />
-                    <img src="assets/images/subscribe-bar/4.jpeg" alt="" />
+        <section class="block-section">
+            <div class="subscribe-box">
+                <div class="box-side box-left-side">
+                    <img src="assets/images/subscribe-bar/left.svg" alt="Subscribe" />
                 </div>
-            </section>
+                <div class="box-mid">
+                    <div class="hs-container">
+                        <h2>Subscribe For More Info and update from Hounter</h2>
+                    </div>
+                    <form class="one-input-form" action="#">
+                        <i id="email-icon">
+                            <img src="assets/svg_icons/mail.svg" alt="email">
+                        </i>
+                        <input type="email" placeholder="Your email here" />
+                        <button class="button active" type="submit">Subscribe Now</button>
+                    </form>
+                </div>
+                <div class="box-side box-right-side">
+                    <img src="assets/images/subscribe-bar/right.svg" alt="Subscribe" />
+                </div>
+            </div>
+        </section>
+        <section class="block-section">
             <footer>
                 <div class="two-sided-container">
                     <div class="left-side">
-                        <div class="footer-logo">
+                        <div class="footer-logo logo">
                             <img src="assets/svg_icons/logo.svg" alt="Hounter" />
                             <h1>Hounter</h1>
                         </div>
-                        <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
+                        <p class="short-text">We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
                         <div class="footer-social">
                             <a href="#">
                                 <i id="facebook-icon">
@@ -521,7 +554,7 @@
                     </div>
                     <div class="right-side">
                         <div class="footer-list">
-                            <h3>Quick Links</h3>
+                            <h3>Property</h3>
                             <ul>
                                 <li><a href="#">House</a></li>
                                 <li><a href="#">Apartment</a></li>
@@ -549,5 +582,6 @@
                 </div>
             </footer>
         </section>
+    </div>
     </body>
 </html>
