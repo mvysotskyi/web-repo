@@ -240,7 +240,7 @@ header.centred .hs-container * {
 .hs-container h5 {
     position: relative;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 18px;
     color: #F59E0B;
 }
@@ -265,7 +265,7 @@ header.centred .hs-container h5::before {
     font-size: 32px;
     font-weight: 600;
     line-height: 40px;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 .nav-categories {
@@ -294,7 +294,7 @@ header.centred .hs-container h5::before {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: calc(50% + 20px);
     height: 100%;
     max-height: 720px;
     /* min-width: 720px; */
@@ -322,12 +322,12 @@ header.centred .hs-container h5::before {
     object-fit: scale-down;
 }
 
-.title-block .right-side,
-.left-side {
-    width: 50%;
+.title-block .left-side {
+    width: calc(50% - 20px);
 }
 
 .title-block .right-side {
+    width: calc(50% + 20px);
     display: flex;
     justify-content: end;
     align-self: flex-end;
@@ -335,7 +335,7 @@ header.centred .hs-container h5::before {
 }
 
 .title-block .left-side {
-    padding-right: 104px;
+    padding-right: 80px;
 }
 
 .title-block .left-side h1 {
