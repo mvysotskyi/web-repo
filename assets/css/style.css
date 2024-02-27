@@ -237,6 +237,10 @@ header.centred .hs-container * {
     text-wrap: balance;
 }
 
+header.centred h2 {
+    margin-top: 12px !important;
+}
+
 .hs-container h5 {
     position: relative;
     font-size: 14px;
@@ -459,8 +463,13 @@ header.centred .hs-container h5::before {
 }
 
 .recs-header button {
-    padding: 12px 19px;
+    padding: 14px 24px;
+    font-weight: 400;
+    font-size: 18px;
+}
 
+.recs-header button.active2 {
+    color: #10B981 !important;
 }
 
 .houses-slider {
