@@ -89,6 +89,7 @@ h1, h2, h3 {
 }
 
 button a {
+    font-weight: 500;
     text-decoration: none;
     color: inherit;
 }
@@ -142,7 +143,7 @@ button.unactive {
 
 .short-text {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px;
     color: #626687;
 }
@@ -161,7 +162,7 @@ button.unactive {
 
 .one-input-form input {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 22px;
     border: none;
     flex: auto;
@@ -207,7 +208,7 @@ select:focus {
 .user-common .user-info p {
     color: #888B97;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 22px;
 }
 
@@ -296,6 +297,7 @@ header.centred .hs-container h5::before {
     width: 50%;
     height: 100%;
     max-height: 720px;
+    /* min-width: 720px; */
     background-image: url(../images/title/1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -305,6 +307,7 @@ header.centred .hs-container h5::before {
 
 .title-block .two-sided-container {
     flex: 1;
+    /* column-gap: 104px; */
 }
 
 .title-block .partnership {
@@ -328,8 +331,11 @@ header.centred .hs-container h5::before {
     display: flex;
     justify-content: end;
     align-self: flex-end;
-    margin-left: 104px;
     padding: 0 0 48px 48px;
+}
+
+.title-block .left-side {
+    padding-right: 104px;
 }
 
 .title-block .left-side h1 {
@@ -368,6 +374,7 @@ header.centred .hs-container h5::before {
     list-style: none;
     display: inline-flex;
     column-gap: 24px;
+    margin-left: 20px;
 }
 
 .title-block .right-side {
@@ -490,7 +497,7 @@ header.centred .hs-container h5::before {
 .house-slide .house-info h5 {
     color: #3C4563;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 32px;
     margin-bottom: 24px;
 }
@@ -681,7 +688,7 @@ footer .right-side {
 a {
     text-decoration: none;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 18px;
     color: #888B97;
 }
@@ -837,6 +844,7 @@ a {
     display: inline-flex;
     align-items: start;
     column-gap: 16px;
+    font-weight: 300;
 }
 
 .article-info .time-info time::before {
